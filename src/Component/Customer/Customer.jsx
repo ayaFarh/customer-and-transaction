@@ -11,7 +11,7 @@ export default function Customer() {
   const [selectedCustomer, setSelectedCustomer] = useState(null);
 
   useEffect(() => {
-    fetch('src/Server/db.json') 
+    fetch('Server/db.json') 
       .then(response => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
